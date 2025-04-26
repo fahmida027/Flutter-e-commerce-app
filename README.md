@@ -7,7 +7,21 @@ A new Flutter project.
 ## Getting Started
 
 ## Project Overview
-This project is a starting point for a Flutter application representing a dashboard.
+This is a Flutter e-commerce app to display a list of products fetched from the API:
+https://fakestoreapi.com/products using the http package. Ensure the following
+requirements are met:
+Requirements:
+1. Fetch Products:
+     Used the provided API to retrieve the product data.
+2. Display Products:
+     - Showed the products in a three-column grid view.
+     - Each product card has been included:
+         ▪ Product image.
+         ▪ Product name.
+         ▪ Product price.
+
+3. Image Caching:
+     Implemented image caching for faster loading when revisiting the app.
 
 
 ## A few resources to get you started if this is your first Flutter project:
