@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:get/get.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:http/http.dart' as http;
 
 import 'api_service/api.dart';
@@ -44,11 +45,25 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text(
-          'Products',
-          style: TextStyle(color: Colors.white),
+       
+title: Text(
+  'Happy Shopping',
+  style: GoogleFonts.pacifico(
+    textStyle: const TextStyle(
+      color: Colors.white,
+      fontSize: 26,
+      shadows: [
+        Shadow(
+          offset: Offset(2, 2),
+          blurRadius: 4,
+          color: Colors.black45,
         ),
-        backgroundColor: Colors.blue,
+      ],
+    ),
+  ),
+),
+
+        backgroundColor: Color.fromARGB(255, 0, 0, 0),
       ),
       body: FutureBuilder(
         future: getProducts(),
@@ -114,7 +129,7 @@ class _HomePageState extends State<HomePage> {
                         onPressed: () {},
                         style: ElevatedButton.styleFrom(
                           minimumSize: const Size.fromHeight(30),
-                          backgroundColor:  Colors.blue,
+                          backgroundColor:  Color.fromARGB(255, 85, 98, 108),
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(10),
                           ),

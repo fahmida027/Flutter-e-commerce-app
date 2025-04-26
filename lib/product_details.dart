@@ -24,7 +24,7 @@ class _ProductDetailsState extends State<ProductDetails> {
         iconTheme: const IconThemeData(
           color: Colors.white
         ),
-        backgroundColor: Colors.blue,
+        backgroundColor: const Color.fromARGB(255, 0, 0, 0),
         title: const Text(
           "Product Details",
           style: TextStyle(color: Colors.white),
@@ -58,7 +58,7 @@ class _ProductDetailsState extends State<ProductDetails> {
                 Container(
                   height: 100,
                   width: MediaQuery.sizeOf(context).width,
-                  color: Colors.blue,
+                  color:Color.fromARGB(255, 85, 98, 108),
                   child: Column(
                     children: [
                       Padding(
